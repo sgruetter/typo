@@ -18,8 +18,8 @@ and build the img class string as "img-tag1 img-tag2 ..."
 <figure class="{{ $classes }}">
 
     <div>
-      {{ if hugo.IsProduction }}
-        <img loading="lazy" alt="{{ .Text }}" data-twic-src="{{ $url }}">
+      {{ if and hugo.IsProduction site.Params.twicPicsUrls }}
+        <img loading="lazy" alt="{{ .Text }}" data-twic-src="image:{{ $url }}">
       {{ else }}
         <img loading="lazy" alt="{{ .Text }}" src="{{ $url }}">
       {{ end }}

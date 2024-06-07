@@ -7,4 +7,6 @@ with . | js.Build $opts | fingerprint }}
 ></script>
 {{- end }} {{- end }}
 
-<script async defer src="https://rebeblog.twic.pics/?v1"></script>
+{{ if and hugo.IsProduction site.Params.twicPicsUrls }}
+  <script async defer src="{{ site.Params.twicPicsUrls }}"></script>
+{{end}}
