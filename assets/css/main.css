@@ -139,6 +139,10 @@ hr {
   margin-top: 0;
 }
 
+.header a {
+  color: var(--primary);
+}
+
 /* Footer */
 
 footer {
