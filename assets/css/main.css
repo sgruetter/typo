@@ -89,9 +89,9 @@ code {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
   font-variant-ligatures: contextual;
-  font-family: "Monaspace";
+  font-family: var(--font-family-code);
   font-size: .9em;
-  line-height: 0;
+  line-height: 1.2rem;
 }
 
 
@@ -179,7 +179,7 @@ footer a {
 
 .line-date {
   font-size: small;
-  font-family: "Monaspace";
+  font-family: var(--font-family-code);
   min-width: 120px;
   max-width: 120px;
   text-align: right;
@@ -404,7 +404,6 @@ figcaption {
 /* breadcrumbs */
 
 .breadcrumbs {
-  /* font-family: "Monaspace"; */
   font-size: .8em;
   margin-bottom: calc(-0.5 * var(--h1-margin-top));
 }
@@ -419,7 +418,7 @@ figcaption {
 
 .back-to-top {
   text-align: center;
-  font-family: "Monaspace";
+  font-family: var(--font-family-code);
   font-size: small;
   margin-bottom: 2rem;
   margin-top: -3rem;
@@ -431,6 +430,7 @@ p code {
   background-color: var(--code-background);
   border-radius: 3px;
   padding: 2px;
+  display: inline-block;
 }
 
 /* Tables */

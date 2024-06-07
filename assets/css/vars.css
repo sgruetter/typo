@@ -30,6 +30,8 @@
     --p-line-height: 1.5em;
     --caption-font-size: .8em;
 
+    --font-family-code: "Lucida Console", Monaco, "Consolas", "Liberation Mono", "DejaVu Sans Mono", "Ubuntu Mono", "Roboto Mono", "Source Code Pro", "Menlo", "Fira Code", monospace;
+
     /* List indentation */
     --li-indent: 1.5rem;
     --ul-margin-top: 1rem;
