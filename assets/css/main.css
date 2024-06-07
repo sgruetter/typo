@@ -185,6 +185,11 @@ footer a {
 
 .line-title {
   margin: 0;
+  font-size: 1.5rem;
+}
+
+.line-title a {
+  text-decoration: none;
 }
 
 .tag-title {
