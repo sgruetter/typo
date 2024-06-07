@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Literata";
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, Roboto, sans-serif;
   margin: auto;
   max-width: var(--main-width);
   padding-left: var(--main-padding);
