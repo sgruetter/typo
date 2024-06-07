@@ -412,7 +412,6 @@ figcaption {
 
 .back-to-top {
   text-align: center;
-  font-family: var(--font-family-code);
   font-size: small;
   margin-bottom: 2rem;
   margin-top: -3rem;
