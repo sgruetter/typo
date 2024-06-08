@@ -17,17 +17,22 @@ and build the img class string as "img-tag1 img-tag2 ..."
 {{/* Use the computed classes on the rendered figure */}}
 <figure class="{{ $classes }}">
 
-    <div>
-      {{ if and hugo.IsProduction site.Params.twicPicsUrls }}
-        <img loading="lazy" alt="{{ .Text }}" data-twic-src="image:{{ $url }}">
-      {{ else }}
-        <img loading="lazy" alt="{{ .Text }}" src="{{ $url }}">
-      {{ end }}
-    </div>
+  <div>
+    {{ $path := "" }}
+    {{ if eq .Page.BundleType "leaf" }}
+      {{ $path = .Page.RelPermalink }}
+    {{ end }} 
 
-    {{ with .Title }}
+    {{ if and hugo.IsProduction site.Params.twicPicsUrls }}
+      <img loading="lazy" alt="{{ .Text }}" data-twic-src="image:{{ $path }}{{ $url }}">
+    {{ else }}
+      <img loading="lazy" alt="{{ .Text }}" src="{{ $path }}{{ $url }}">
+    {{ end }}
+  </div>
+
+  {{ with .Title }}
     <div class="caption-container">
         <figcaption> {{ . | markdownify}} </figcaption>
     </div>
-    {{ end }}
+  {{ end }}
 </figure>
