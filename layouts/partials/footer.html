@@ -1,7 +1,8 @@
 <p>
+    {{ if .Site.Params.Feed }}
+    <a href="/index.xml">Feed</a> ・
+  {{ end }}
   Powered by <a href="https://gohugo.io/">Hugo</a> and
-  <a href="https://github.com/tomfran/typo">tomfran/typo</a> via
-  <a href="https://github.com/sgruetter/typo">my fork</a>
-</p>
+  <a href="https://github.com/sgruetter/typo">a typo fork</a> 
 
-{{ if .Param "math" }} {{ partialCached "math.html" . }} {{ end }}
+</p>
